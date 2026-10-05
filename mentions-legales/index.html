@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<script>if(location.protocol==="http:"&&/lacoursecontinue\.fr$/.test(location.hostname))location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
+<script>if(/lacoursecontinue\.fr$/.test(location.hostname)&&(location.protocol==="http:"||location.hostname!=="www.lacoursecontinue.fr"))location.replace("https://www.lacoursecontinue.fr"+location.pathname+location.search+location.hash)</script>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
