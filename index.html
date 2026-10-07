@@ -79,10 +79,10 @@ footer .legal{margin-top:2.5rem;padding-top:1.4rem;border-top:1px solid rgba(255
 .hero{position:relative;min-height:min(92vh,880px);color:var(--papier);display:flex;flex-direction:column;background:var(--mer2);overflow:hidden}
 .hero .navbar{position:relative;z-index:3;background:transparent;border:0;color:var(--papier)}
 .slides{position:absolute;inset:0;z-index:0}
-.slide{position:absolute;inset:0;margin:0;opacity:0;animation:fade 24s infinite}
-.slide:nth-child(2){animation-delay:6s}.slide:nth-child(3){animation-delay:12s}.slide:nth-child(4){animation-delay:18s}
+.slide{position:absolute;inset:0;margin:0;opacity:0;animation:fade 36s infinite}
+.slide:nth-child(2){animation-delay:6s}.slide:nth-child(3){animation-delay:12s}.slide:nth-child(4){animation-delay:18s}.slide:nth-child(5){animation-delay:24s}.slide:nth-child(6){animation-delay:30s}
 .slide img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
-@keyframes fade{0%{opacity:0}3%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
+@keyframes fade{0%{opacity:0}2%{opacity:1}16.7%{opacity:1}19.5%{opacity:0}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.slide{opacity:0}.slide:first-child{opacity:1}}
 .slide figcaption{position:absolute;right:1.2rem;bottom:1rem;z-index:2;font-size:.75rem;color:rgba(241,240,236,.85);text-shadow:0 1px 3px rgba(0,0,0,.6)}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(12,34,54,.92) 0%,rgba(12,34,54,.72) 38%,rgba(12,34,54,.15) 72%,rgba(12,34,54,0) 100%),linear-gradient(0deg,rgba(12,34,54,.55) 0%,rgba(12,34,54,0) 40%)}
@@ -299,7 +299,9 @@ form button:disabled{background:#E4DCC2;color:#7D7769;cursor:not-allowed}
  <div class="slides" aria-hidden="false"><figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-arcachon-m.webp"><img src="/img/band-arcachon-w.webp" alt="La flotte au départ d'Arcachon en 1995, en Figaro Bénéteau" fetchpriority=high></picture><figcaption>Arcachon, 1995, Figaro Bénéteau &copy; J. Vapillon</figcaption></figure>
 <figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-figaro3-m.webp"><img src="/img/band-figaro3-w.webp" alt="La flotte en Figaro Bénéteau 3, aujourd'hui" loading=lazy></picture><figcaption>La course aujourd'hui, en Figaro Bénéteau 3 &copy; J. Vapillon</figcaption></figure>
 <figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-bourgnon-m.webp"><img src="/img/band-bourgnon-w.webp" alt="Laurent Bourgnon à la barre en 1988" loading=lazy></picture><figcaption>Laurent Bourgnon, vainqueur en 1988 &copy; J. Vapillon</figcaption></figure>
-<figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-depart88-m.webp"><img src="/img/band-depart88-w.webp" alt="Un départ d'étape à la fin des années 1980, en half-tonners" loading=lazy></picture><figcaption>Départ d'étape, half-tonners &copy; J. Vapillon</figcaption></figure></div>
+<figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-depart88-m.webp"><img src="/img/band-depart88-w.webp" alt="Un départ d'étape à la fin des années 1980, en half-tonners" loading=lazy></picture><figcaption>Départ d'étape, half-tonners &copy; J. Vapillon</figcaption></figure>
+<figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-generali-m.webp"><img src="/img/band-generali-w.webp" alt="Un Figaro Bénéteau 2 dans la brise, enveloppé d'embruns" loading=lazy></picture><figcaption>Figaro Bénéteau 2, dans la brise &copy; J. Vapillon</figcaption></figure>
+<figure class="slide"><picture><source media="(max-width:700px)" srcset="/img/band-spi-m.webp"><img src="/img/band-spi-w.webp" alt="Un Figaro Bénéteau 2 sous spi dans la houle" loading=lazy></picture><figcaption>Figaro Bénéteau 2, sous spi &copy; J. Vapillon</figcaption></figure></div>
  <header class="navbar navbar--dark"><nav class="nav" aria-label="Navigation principale">
 <a class="brand" href="/">La course <span>continue</span></a>
 <ul id="menu"><li class=navopt><a href="/#histoire">L&rsquo;ancrage</a></li><li class=navopt><a href="/#continue">Ce qui continue</a></li><li><a href="/signataires/">Les signataires</a></li><li><a href="/#suite">La suite</a></li><li class=navopt><a href="/le-relais/">L&rsquo;histoire du collectif</a></li><li><a class="cta" href="/rejoindre/">Signer</a></li></ul>
@@ -372,7 +374,7 @@ form button:disabled{background:#E4DCC2;color:#7D7769;cursor:not-allowed}
  <ol class="frise">
   <li><p class="an">1970</p><div class="ph"><img src="/img/depart-88-640.webp" alt="Départ d'étape en half-tonners" loading="lazy"></div><h3>Les half-tonners</h3><p>Les premières éditions, sur des bateaux de série choisis pour leur robustesse.</p></li>
   <li><p class="an">1990</p><div class="ph"><img src="/img/arcachon-dune-95-640.webp" alt="La flotte en Figaro Bénéteau devant la dune du Pilat en 1995" loading="lazy"></div><h3>Figaro Bénéteau</h3><p>Le premier monotype : des bateaux identiques, et la course entre dans une nouvelle ère.</p></li>
-  <li><p class="an">2003</p><div class="ph ph--txt">II</div><h3>Figaro Bénéteau 2</h3><p>Plus rapide, plus exigeant, il accompagne une génération de vainqueurs.</p></li>
+  <li><p class="an">2003</p><div class="ph"><img src="/img/figaro2-flotte-640.webp" alt="La flotte en Figaro Bénéteau 2 vue du ciel" loading="lazy"></div><h3>Figaro Bénéteau 2</h3><p>Plus rapide, plus exigeant, il accompagne une génération de vainqueurs.</p></li>
   <li><p class="an">2019</p><div class="ph"><img src="/img/figaro3-depart-640.webp" alt="La flotte en Figaro Bénéteau 3" loading="lazy"></div><h3>Figaro Bénéteau 3</h3><p>Le bateau d&rsquo;aujourd&rsquo;hui, à foils, toujours le même pour tous.</p></li>
   <li><p class="an">Demain</p><div class="ph ph--txt ph--next">Un nom</div><h3>La même course</h3><p>Les mêmes bateaux, les mêmes skippers, sous un nouveau nom.</p></li>
  </ol>
